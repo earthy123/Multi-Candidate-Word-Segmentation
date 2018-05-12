@@ -4,14 +4,15 @@ Most existing word segmentation methods output
 one single segmentation solution. This project provides an analysis
 of word segmentation performance when more than one solutions are taken into account
 
-## Required libraries
+## Prerequisites
 
+### Required libraries
   - Python 3
   - pytorch 0.3.1
   - numpy
   - pickle
 
-### Prerequisites
+### Corpus
 
 Text corpus from [InterBEST 2009/2010](https://www.nectec.or.th/corpus/index.php?league=pm)
 
@@ -31,7 +32,6 @@ Output of one candiate
 ```
 Output of multi-candidate
 ```
-
 เมื่อหนุ่มคน|ดังกล่าวขับ
 เมื่อหนุ่มคน|ดังกล่าว|ขับ
 เมื่อหนุ่มคน|ดัง|กล่าว|ขับ
@@ -57,7 +57,5 @@ Output of multi-candidate
 ## Authors
 
 * **Theerapt Lapjaturapit**
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 

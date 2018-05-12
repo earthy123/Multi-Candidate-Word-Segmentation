@@ -5,6 +5,9 @@ one single segmentation solution. This project provides an analysis
 of word segmentation performance when more than one solutions are taken into account
 
 ## Prerequisites
+### Weight & Dictionaries
+
+Weight & Dictionaries can be download from this [LINK](https://goo.gl/hsgn8q)
 
 ### Required libraries
   - Python 3

@@ -21,7 +21,7 @@ Text corpus from [InterBEST 2009/2010](https://www.nectec.or.th/corpus/index.php
 
 
 
-### Usage
+## Usage
 
 
 ```
@@ -59,6 +59,6 @@ Output of multi-candidate
 
 ## Author
 
-* **Theerapt Lapjaturapit**
+* **Theerapat Lapjaturapit** - Theerapat.lap@gmail.com
 
 

@@ -51,9 +51,9 @@ def acc(outputs,labels,bs):
     _, preds = torch.max(outputs.data, 1)
 #     print('preds',preds)
 #     print('labels',labels)
-"""
-preds is in batch form, we need to split each of them to compare with output
-"""
+    """
+    preds is in batch form, we need to split each of them to compare with output
+    """
     for i in range(bs):
         _, preds = torch.max(outputs[i].data, 1)
         y=labels[i]

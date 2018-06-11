@@ -4,7 +4,7 @@ Most existing word segmentation methods output
 one single segmentation solution. This project provides an analysis
 of word segmentation performance when more than one solutions are taken into account
 
-## Performance
+## Performance of Single Candidate
 BEST2009 - Evaluate on correction of boundary of text  
 Strick InterBEST - Strick on Name Entity that should tokenizes correctly
 

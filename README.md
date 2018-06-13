@@ -69,4 +69,8 @@ Output of multi-candidate
 
 * **Theerapat Lapjaturapit** - Theerapat.lap@gmail.com
 
+## License
+
+[MIT](LICENSE.md)
+
 

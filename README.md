@@ -3,7 +3,7 @@
 Most existing word segmentation methods output
 one single segmentation solution. This project provides an analysis
 of word segmentation performance when more than one solutions are taken into account.
-This code are used paper [link](https://ieeexplore.ieee.org/abstract/document/8442053/)
+This code are used in this paper [link](https://ieeexplore.ieee.org/abstract/document/8442053/)
 
 ## Performance of Single Candidate
 BEST2009 - Evaluate on correction of boundary of text  

@@ -494,9 +494,10 @@ def one_candidate(text1):
     cut_symbol = tcc_indices['|']
     final_text =np.insert(original_text, loc, cut_symbol)
     cut_word = [(indices_tcc[i]) for i in final_text]
-    cut_word = ''.join(cut_word)
+#     cut_word = ''.join(cut_word)
     #         cut_word = cut_word.replace('\n','')
-    print(cut_word)
+#     print(cut_word)
+    return cut_word
     
 def multi_candidate(text1):
     text_tcc = parallel_tcc(text1,10)

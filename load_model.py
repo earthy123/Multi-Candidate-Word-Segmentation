@@ -395,7 +395,7 @@ def predict(text,precentage_list):
     return out
                    
                    
-def result_chunk(chunks):
+def result_chunk(chunks,win_size):
     
     collection_result=[]
     len_c_in_datas = len(chunks)
@@ -484,7 +484,7 @@ def one_candidate(text1):
         win_size = 11
         c=win_size+1+win_size
         c_in_datas = [[xs[i+j] for i in range(c)] for j in range(len(xs)-c+1)]
-        result = result_chunk(c_in_datas)
+        result = result_chunk(c_in_datas,win_size)
     result = np.stack(result)
     result=np.argmax(result, axis=1)
     i = np.stack(result)
@@ -494,9 +494,10 @@ def one_candidate(text1):
     cut_symbol = tcc_indices['|']
     final_text =np.insert(original_text, loc, cut_symbol)
     cut_word = [(indices_tcc[i]) for i in final_text]
-    cut_word = ''.join(cut_word)
+#     cut_word = ''.join(cut_word)
     #         cut_word = cut_word.replace('\n','')
-    print(cut_word)
+#     print(cut_word)
+    return cut_word
     
 def multi_candidate(text1):
     text_tcc = parallel_tcc(text1,10)
@@ -518,7 +519,7 @@ def multi_candidate(text1):
         win_size = 11
         c=win_size+1+win_size
         c_in_datas = [[xs[i+j] for i in range(c)] for j in range(len(xs)-c+1)]
-        result = result_chunk(c_in_datas)
+        result = result_chunk(c_in_datas,win_size)
     result = np.stack(result)
     preds = con_ranking(result)  
     for i in preds:
